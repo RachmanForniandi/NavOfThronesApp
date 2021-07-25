@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NavOfThronesApp</string>
+    <string name="stark">Stark</string>
+    <string name="targaryen">Targaryen</string>
+    <string name="aegon">Aegon</string>
+    <string name="promise_me_ned">Promise me, Ned</string>
+    <string name="jon_snow">Jon Snow</string>
+    <string name="prince">The prince that was promised</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

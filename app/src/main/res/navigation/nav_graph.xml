@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="rachman.forniandi.navofthronesapp.ui.main.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_lyannaFragment"
+            app:destination="@id/lyannaFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_rhaegarFragment"
+            app:destination="@id/rhaegarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lyannaFragment"
+        android:name="rachman.forniandi.navofthronesapp.ui.main.LyannaFragment"
+        android:label="LyannaFragment"
+        tools:layout="@layout/fragment_lyanna" >
+        <action
+            android:id="@+id/action_lyannaFragment_to_jonSnowFragment"
+            app:destination="@id/jonSnowFragment"
+            app:enterAnim="@anim/translate_in_up"
+            app:exitAnim="@anim/translate_out_up"
+            app:popEnterAnim="@anim/translate_in_down"
+            app:popExitAnim="@anim/translate_out_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/rhaegarFragment"
+        android:name="rachman.forniandi.navofthronesapp.ui.main.RhaegarFragment"
+        android:label="RhaegarFragment"
+        tools:layout="@layout/fragment_rhaegar" >
+        <action
+            android:id="@+id/action_rhaegarFragment_to_jonSnowFragment"
+            app:destination="@id/jonSnowFragment"
+            app:enterAnim="@anim/translate_in_up"
+            app:exitAnim="@anim/translate_out_up"
+            app:popEnterAnim="@anim/translate_in_down"
+            app:popExitAnim="@anim/translate_out_down"/>
+    </fragment>
+    <fragment
+        android:id="@+id/jonSnowFragment"
+        android:name="rachman.forniandi.navofthronesapp.ui.main.JonSnowFragment"
+        android:label="JonSnowFragment"
+        tools:layout="@layout/fragment_jon_snow" >
+        <argument
+            android:name="whoami"
+            android:defaultValue="No One"
+            app:argType="string" />
+    </fragment>
+</navigation>
